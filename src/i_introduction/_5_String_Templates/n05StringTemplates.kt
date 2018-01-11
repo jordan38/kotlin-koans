@@ -25,6 +25,8 @@ fun example() = "13.06.1992".matches(getPattern().toRegex()) //true
 
 val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 
+val months = listOf("JAN","FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
+
 fun todoTask5(): Nothing = TODO(
     """
         Task 5.
@@ -35,4 +37,6 @@ fun todoTask5(): Nothing = TODO(
     documentation = doc5(),
     references = { getPattern(); month })
 
-fun task5(): String = todoTask5()
+fun task5(): String {
+    return """\d{2}\ (${months.joinToString("|")}) \d{4}"""
+}
