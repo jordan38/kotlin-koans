@@ -13,6 +13,12 @@ class N08SmartCastsKtTest {
     }
 
     @Test fun testRecursion() {
-        assertEquals("'eval' should work recursively:", 6, eval(Sum(Sum(Num(1), Num(2)), Num(3))))
+        assertEquals("'eval' should work recursively:", 6, eval(
+                Sum(
+                        Sum(Num(1), Num(2)),
+
+                        Num(3)
+                )
+        ))
     }
 }

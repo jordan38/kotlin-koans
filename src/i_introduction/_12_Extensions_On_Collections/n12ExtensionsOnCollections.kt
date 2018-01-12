@@ -11,13 +11,14 @@ fun todoTask12(): Nothing = TODO(
 
         Kotlin code can be easily mixed with Java code.
         Thus in Kotlin we don't introduce our own collections, but use standard Java ones (slightly improved).
-        Read about read-only and mutable views on Java collections.
+        Read about read-only and mutable views o
+        n Java collections.
     """,
     documentation = doc12()
 )
 
 fun task12(): List<Int> {
-    todoTask12()
-    return arrayListOf(1, 5, 2)
+//    todoTask12()
+    return arrayListOf(1, 5, 2).sortedDescending()
 }
 
